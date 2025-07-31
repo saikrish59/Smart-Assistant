@@ -11,7 +11,7 @@ if uploaded_file:
     docs = handle_file_upload(uploaded_file)
     if query:
         response, reasoning = chat_with_agent(query, docs)
-        st.markdown("### 🤖 Response")
+        st.markdown("### Response")
         st.write(response)
-        st.markdown("### 🧠 Reasoning")
+        st.markdown("###  Reasoning")
         st.write(reasoning)
